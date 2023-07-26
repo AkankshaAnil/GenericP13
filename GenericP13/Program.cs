@@ -7,7 +7,7 @@ internal class Program
     {
         Console.WriteLine("Find Maximum Number");
 
-        double output1 = MaxFloatNumber.MaximumFloatNumber(11.2, 22.3, 33.4);
-        Console.WriteLine("Max Float Value is: " + output1);
+        string output2 = MaxStringNumber.MaximumStringNumber("Apple", "peach", "Banana");
+        Console.WriteLine("Max String Value is: " + output2);
     }
 }

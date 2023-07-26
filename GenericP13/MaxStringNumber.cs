@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GenericP13
 {
-    internal class MaxFloatNumber
+    internal class MaxStringNumber
     {
-        public static double MaximumFloatNumber(double firstValue, double secondValue, double thirdValue)
+        public static string MaximumStringNumber(string firstValue, string secondValue, string thirdValue)
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
             {
@@ -23,6 +23,7 @@ namespace GenericP13
                 return thirdValue;
             }
             return firstValue;
+
             throw new Exception("FirstNumber,SecondNumber,ThirdNumber are same");
         }
 
