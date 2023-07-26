@@ -7,7 +7,7 @@ internal class Program
     {
         Console.WriteLine("Find Maximum Number");
 
-        int output = MaxNumber.MaximumIntNumber(10,30,20);
-        Console.WriteLine(output);
+        double output1 = MaxFloatNumber.MaximumFloatNumber(11.2, 22.3, 33.4);
+        Console.WriteLine("Max Float Value is: " + output1);
     }
 }

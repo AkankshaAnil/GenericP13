@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace GenericP13
 {
-    internal class MaxNumber
+    internal class MaxFloatNumber
     {
-        public static int MaximumIntNumber(int firstValue, int secondValue, int thirdValue)
+        public static double MaximumFloatNumber(double firstValue, double secondValue, double thirdValue)
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
-            { 
-                return firstValue; 
+            {
+                return firstValue;
             }
-            if(secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) > 0)
+            if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) > 0)
             {
                 return secondValue;
             }
@@ -23,6 +23,8 @@ namespace GenericP13
                 return thirdValue;
             }
             return firstValue;
+            throw new Exception("FirstNumber,SecondNumber,ThirdNumber are same");
         }
+
     }
 }
