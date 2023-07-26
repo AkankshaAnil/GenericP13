@@ -1,21 +1,13 @@
-﻿internal class Program
+﻿using GenericP13;
+using System;
+using System.Collections.Generic;
+internal class Program
 {
     static void Main(String[] args)
     {
-        int[] intArray = { 1, 2, 3, 4, 5, };
-        double[] doubleArray = { 1.1, 2.2, 3.3, 4.5, 5.5, };
-        char[] charArray = { 'H','E', 'L', 'L', 'O', };
+        Console.WriteLine("Find Maximum Number");
 
-        Program.toPrint<int>(intArray);
-        Program.toPrint<double>(doubleArray);
-        Program.toPrint<char>(charArray);
+        int output = MaxNumber.MaximumIntNumber(10,30,20);
+        Console.WriteLine(output);
     }
-    public static void toPrint<T>(T[] inputArray)
-    {
-        foreach (var element in inputArray)
-        {
-            Console.WriteLine(element);
-        }
-        Console.WriteLine("--------------");
-    }    
 }
