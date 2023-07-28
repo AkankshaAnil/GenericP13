@@ -7,6 +7,10 @@ internal class Program
     {
         Console.WriteLine("Find Maximum Number");
 
+        GenericMaximum2<int> search = new GenericMaximum2<int>(20, 30, 40);
+    
+        Console.WriteLine("MaxValue =" +search.MaxMethod());
+
         int output = MaximumNumber.MaximumIntNumber(10, 30, 20);
         Console.WriteLine(output);
  
